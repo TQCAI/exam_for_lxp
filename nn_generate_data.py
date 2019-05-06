@@ -24,7 +24,7 @@ for i in range(10):
     y=to_flat_list(y)
     x=to_flat_list(x)
     b=to_flat_list(b)
-    with open(f'nn_data/Test{i + 1:02}.in', 'a+') as f:
+    with open(f'nn_data/Test{i + 1:02}.in', 'w+') as f:
         print(n,m, file=f)
         print(*x, file=f)
         for row in W:
